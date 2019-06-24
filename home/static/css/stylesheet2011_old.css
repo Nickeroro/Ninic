@@ -1,0 +1,168 @@
+body{
+	background-image: url(../img/background_2011.png);
+	background-color: #303030;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+}
+
+.page {
+	background-color: rgba(0, 0, 0, 0.30)!important;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+
+.modal-body {
+    position:relative; /* This avoids whatever it's absolute inside of it to go off the container */
+    background-color:#0077f7;
+}
+
+.img-responsive {
+
+    max-width:100%;
+    max-height:100%;
+    margin-top:auto;
+    margin-left:auto;
+}
+
+.dropdown-menu {
+    background-color: #303030;
+ }
+.dropdown-menu a:hover {
+color: #303030 !important;
+}
+.dropdown-menu a:active {
+color: #000000 !important;
+}
+.navbar{
+	background-color: rgba(200, 200, 200, 0.5)!important;
+}
+
+.navbar-brand{
+	font-family: 'Vibur', cursive;
+	font-size: 35px;
+}
+.name-brand{
+    font-family: 'Vibur', cursive;
+	font-size: 25px;
+}
+
+
+.introduction{
+	text-align: center;
+    flex: 1!important;
+	background-color: rgba(0, 0, 0, 0)!important;
+	font-size: 21px;
+}
+
+
+.introduction h1{
+	font-size: 100px;
+	font-family: 'Rancho', cursive;
+	color: #ffffff;
+}
+
+.font-thin {
+	font-family: 'Roboto Thin', sans-serif;
+}
+
+.introduction p{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+.card {
+	padding: 3px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+
+
+
+.footer {
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+    line-height: 60px; /* Vertically center the text there */
+	color: rgba(255, 255, 255, 1)!important;
+	text-align: center;
+}
+
+
+.close {
+	color: rgba(255, 255, 255, 1)!important;
+}
+
+a{
+	color: rgba(255, 255, 255, 1)!important;
+	text-decoration: none;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: rgba(0, 0, 0, 0.30)!important;
+}
+
+/* When you mouse over the card-image, fade in the overlay icon*/
+.card-image:hover .overlay {
+  opacity: 1;
+}
+
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.gradient {
+	background-image: url(../img/button.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.mapdiv{
+    width: 100%;
+    margin: auto;
+}
+
+.card-social p{
+	font-size: 25px;
+}
+
+.btn-facebook {
+	background-color: #3C5A99 ;
+}
+
+.btn-messenger {
+	background-color: #0078FF ;
+}
+
+.btn-twitter {
+	background-color: #1DA1F2 ;
+}
+
+.social{
+	margin-top: 2px;
+	margin-bottom: 2px;
+}

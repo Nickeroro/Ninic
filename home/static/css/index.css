@@ -1,0 +1,167 @@
+body{
+	background-image: url(../img/background.png);
+	background-color: #303030;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+}
+
+.page {
+	background-color: rgba(0, 0, 0, 0.30)!important;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.navbar{
+	background-color: rgba(200, 200, 200, 0.5)!important;
+}
+
+.navbar-brand{
+	font-family: 'Vibur', cursive;
+	font-size: 35px;
+}
+
+.dropdown-menu {
+    background-color: #303030;
+ }
+.dropdown-menu a:hover {
+color: #303030 !important;
+}
+.dropdown-menu a:active {
+color: #000000 !important;
+}
+
+.introduction{
+	text-align: center;
+    flex: 1!important;
+	background-color: rgba(0, 0, 0, 0)!important;
+	font-size: 21px;
+}
+
+
+.introduction h1{
+	font-size: 100px;
+	font-family: 'Rancho', cursive;
+	color: #ffffff;
+}
+
+.font-thin {
+	font-family: 'Roboto Thin', sans-serif;
+}
+
+.introduction p{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+.card {
+	padding: 3px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+
+
+.footer {
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 60px; /* Vertically center the text there */
+	color: rgba(255, 255, 255, 1)!important;
+	text-align: center;
+}
+
+
+.close {
+	color: rgba(255, 255, 255, 1)!important;
+}
+
+a{
+	color: rgba(255, 255, 255, 1)!important;
+	text-decoration: none;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: rgba(0, 0, 0, 0.30)!important;
+}
+
+/* When you mouse over the card-image, fade in the overlay icon*/
+.card-image:hover .overlay {
+  opacity: 1;
+}
+
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.gradient {
+	background-image: url(../img/button.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.mapdiv{
+    width: 100%;
+    margin: auto;
+}
+
+#PART_2011:hover {
+	cursor: pointer;
+	fill: #0077f7
+}
+
+#PART_2014_2015:hover {
+	cursor: pointer;
+	fill: #343a40
+}
+
+#PART_2016:hover {
+	cursor: pointer;
+	fill: #ffc103
+}
+
+#PART_2017:hover {
+	cursor: pointer;
+	fill: #17a2b8
+}
+
+#PART_2018:hover {
+	cursor: pointer;
+	fill: #dc3545
+}
+
+#PART_2019:hover {
+	cursor: pointer;
+	fill: #28a745
+}
+
+#spare_01:hover, #spare_02:hover, #spare_03:hover, #spare_04:hover   {
+    cursor: pointer;
+    fill: #b0b0b0;
+}
+
+#PART_2011, #PART_2014_2015, #PART_2016, #PART_2017, #PART_2018, #PART_2019, #spare_01, #spare_02, #spare_03, #spare_04 {
+    cursor: pointer;
+    fill: #b0b0b0;
+}

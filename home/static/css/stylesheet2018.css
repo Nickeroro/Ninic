@@ -1,0 +1,177 @@
+body{
+	background-image: url(../img/background_2018.png);
+	background-color: #303030;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  color: #dc3545;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #dc3545;
+  color: #ffffff;
+}
+
+.tz-gallery img{
+	width: 100%;
+}
+
+.tz-gallery {
+    padding-top: 50px;
+    padding-left: 240px;
+    padding-right: 220px;
+}
+
+.tz-gallery .thumbnail {
+    padding: 0;
+    margin-bottom: 30px;
+    background-color: #dc3545;
+    border-radius: 10px;
+    border: none;
+    transition: 0.20s ease-in-out;
+    box-shadow: 0 6px 9px rgba(0, 0, 0, 0.3);
+}
+
+.tz-gallery .thumbnail:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+.tz-gallery .lightbox img {
+    border-radius: 4px 4px 0 0;
+}
+
+.tz-gallery .caption{
+    padding: 26px 30px;
+    text-align: center;
+}
+
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+.page {
+	background-color: rgba(0, 0, 0, 0.30)!important;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.dropdown-menu {
+    background-color: #303030;
+ }
+.dropdown-menu a:hover {
+color: #303030 !important;
+}
+.dropdown-menu a:active {
+color: #000000 !important;
+}
+.navbar{
+	background-color: rgba(200, 200, 200, 0.5)!important;
+}
+
+.navbar-brand{
+	font-family: 'Vibur', cursive;
+	font-size: 35px;
+}
+.name-brand{
+    font-family: 'Vibur', cursive;
+	font-size: 25px;
+}
+
+
+.introduction{
+	text-align: center;
+    flex: 1!important;
+	background-color: rgba(0, 0, 0, 0)!important;
+	font-size: 21px;
+}
+
+
+.introduction h1{
+	font-size: 100px;
+	font-family: 'Rancho', cursive;
+	color: #ffffff;
+}
+
+.font-thin {
+	font-family: 'Roboto Thin', sans-serif;
+}
+
+
+.footer {
+	position: inherit;
+    bottom: 1px;
+    width: 100%;
+    line-height: 60px; /* Vertically center the text there */
+	color: rgba(255, 255, 255, 1)!important;
+	text-align: center;
+}
+
+
+.close {
+	color: rgba(255, 255, 255, 1)!important;
+}
+
+a{
+	color: rgba(255, 255, 255, 1)!important;
+	text-decoration: none;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: rgba(0, 0, 0, 0.30)!important;
+}
+
+/* When you mouse over the card-image, fade in the overlay icon*/
+.card-image:hover .overlay {
+  opacity: 1;
+}
+
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.gradient {
+	background-image: url(../img/button.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.mapdiv{
+    width: 100%;
+    margin: auto;
+}
