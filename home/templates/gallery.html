@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block stylesheet %}
+{% if pics %}
+	{% block picsviewercss %}
+		{% for pictures in pics %}
+			{%if forloop.first %}
+<link rel="stylesheet" href="../static/css/stylesheet{{pictures.CATEGORY}}.css">
+			{% endif %}
+		{% endfor %}
+    {% endblock picsviewercss %}
+{% endif %}
+
+
+
+{% endblock stylesheet %}
+{% block content %}
+
+
+<div class="gallery">
+	{% if pics %}
+		{% block picsviewer %}
+
+					<div class="tz-gallery">
+						<div class="row">
+							{% for pictures in pics %}
+							<div class="col-sm-6 col-md-4">
+								<div class="thumbnail">
+									<a class="lightbox" href="{{pictures.IMG_URL}}">
+										<img src="{{pictures.IMG_URL}}">
+									</a>
+									<div class="caption font-thin">
+										<a class="name-brand">
+											{{pictures.IMG_NAME}}
+										</a>
+									</div>
+								</div>
+							</div>
+							{% endfor %}
+						</div>
+					</div>
+		{% endblock picsviewer %}
+	{% endif %}
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+
+{% endblock content %}
+
