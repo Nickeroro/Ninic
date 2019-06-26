@@ -10,7 +10,7 @@ Django==2.2.2
 docutils==0.14
 idna==2.8
 imagesize==1.1.0
-Jinja2==2.10
+Jinja2>=2.10.1
 MarkupSafe==1.1.1
 Naked==0.1.31
 numpy==1.16.4
@@ -22,7 +22,7 @@ pur==5.2.2
 Pygments==2.3.1
 pyparsing==2.3.1
 pytz==2019.1
-PyYAML==3.13
+pyyaml>=4.2b1
 requests==2.22.0
 shellescape==3.4.1
 six==1.12.0
