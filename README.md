@@ -2,4 +2,4 @@
 
 Django / python based website for my images gallery
 
-Demo: ninic.pythonanywhere.com
+Demo: https://ninic.pythonanywhere.com
